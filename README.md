@@ -37,10 +37,12 @@ Essa prova consiste em testar seus conhecimentos em desenvolvimento de aplicaç�
 
 ### Funcionalidades
 
-> Na aplicação devem conter as seguintes funcionalidades:
-> 1.Interface de cadrastro,login e recuperação de senha.
-> 1.Barra lateral com navegação.
-> 1.Barra superior com navegação.
+Na aplicação devem conter as seguintes funcionalidades:
+
+- Interface de cadrastro,login e recuperação de senha.
+- Barra lateral com navegação.
+- Barra superior com navegação.
+- Apresentar dados relavantes sobre despesas dos parlamentares
 
 ### Especificações técnicas
 
