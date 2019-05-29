@@ -60,10 +60,10 @@ Mas fique a vontade de utilizar uma biblioteca de sua preferencia.<br>
 
 Abaixo vamos apresentar alguns dashbords para inspiração, porem sinta-se totalmente livre para apresentar.
 
-
+**Exemplo01**
 ![Exemplo01.jpg](/.attachments/exemplo1.gif)
 
-
+**Exemplo02**
 ![Exemplo02.jpg](/.attachments/exemplo2.jpg)
 
 ## Dúvidas?
