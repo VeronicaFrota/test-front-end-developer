@@ -19,7 +19,7 @@ Essa prova consiste em testar seus conhecimentos em desenvolvimento de aplicaç�
 - Ser ninja em **User Experience**.
 - Design de arquitetura de aplicações web;
 - Implementação de segurança e proteção dos dados no FrontEnd.
-- Conhecimento em alguma linguagem de programação back-end (Python, Node)
+- Conhecimento em alguma linguagem de programação back-end (Python, Go)
 - Conhecimento em modelagem de banco de dados;
 - Noções de aplicações em nuvem (AWS, Google Cloud, etc);
 - Tiver trabalhado com webcrawlers;
@@ -32,7 +32,7 @@ Essa prova consiste em testar seus conhecimentos em desenvolvimento de aplicaç�
 
 ## Detalhes da prova
 
-> A prova consiste em desenvolver um Dashboard de uma aplicação web. <br>
+> A prova consiste em desenvolver um Dashboard de uma aplicação web, utilizando dados da api publica disponibilizada para o Teste.<br>
 > A aplicação deve ser desenvolvida de preferência utilizando algum framework Javascript (**React**, **Angular**, **Vue**, etc). <br>
 
 ### Funcionalidades
