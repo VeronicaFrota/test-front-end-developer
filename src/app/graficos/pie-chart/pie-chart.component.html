@@ -1,0 +1,14 @@
+
+<div *ngIf="deputadoInfo">
+	<h2 class="titulo-grafico">Deputado {{ deputadoInfo.nome | titlecase }} - {{ deputadoInfo.siglaPartido }} ({{ deputadoInfo.siglaUf }})</h2>
+	<h3 class="subtitulo-grafico">Valores Gastos com Documentosno Mês de Setembro</h3>
+</div>
+
+<div *ngIf="despesa">
+	<canvas baseChart
+		[data]="pieChartData"
+		[labels]="pieChartLabels"
+		[chartType]="pieChartType"
+		[options]="pieChartOptions">
+	</canvas>
+</div>

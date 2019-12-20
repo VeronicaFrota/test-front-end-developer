@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-information {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.right {
+    margin-right: 15px;
+}
+
+.card-item {
+    display: flex;
+    margin-left: 90px;
+    margin-top: -21px;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0px 0px 72px;
+}
+
+.card-ano {
+    margin-left: 14px;
+}
+
+::ng-deep .mat-icon {
+    font-size:50px !important;
+}
+
+h1 {
+    color: #d30279;
+}
+
+span {
+    color: #5fc9df;
+}

@@ -1,0 +1,48 @@
+
+<section class="table">
+    <div class="table-title" *ngIf="parlamentarInfo">
+        <span>Detalhamento das despesas do Parlamentar - {{ parlamentarInfo.nome | titlecase }} - {{ parlamentarInfo.siglaPartido }} ({{ parlamentarInfo.siglaUf }})</span>
+    </div>
+
+    <table mat-table [dataSource]="dataSourceParlamentar" class="mat-elevation-z8">
+        <ng-container matColumnDef="dataDocumento">
+            <th mat-header-cell *matHeaderCellDef> Data do Documento </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.dataDocumento | date: 'dd/MM/yyyy'  }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="tipoDespesa">
+            <th mat-header-cell *matHeaderCellDef> Tipo de Despesa </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.tipoDespesa | titlecase }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="tipoDocumento">
+            <th mat-header-cell *matHeaderCellDef> Tipo do Documento </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.tipoDocumento | titlecase }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="numDocumento">
+            <th mat-header-cell *matHeaderCellDef> Num. de Documento </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.numDocumento }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="valorDocumento">
+            <th mat-header-cell *matHeaderCellDef> Valor do Documento </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.valorDocumento }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nomeFornecedor">
+            <th mat-header-cell *matHeaderCellDef> Nome do Fornecedor </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.nomeFornecedor | titlecase }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="cnpjCpfFornecedor">
+            <th mat-header-cell *matHeaderCellDef> CNPJ do Fornecedor </th>
+            <td mat-cell *matCellDef="let despesas"> {{ despesas.cnpjCpfFornecedor }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsParlamentar"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsParlamentar;"></tr>
+    </table>
+
+    <mat-paginator class="paginador" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</section>

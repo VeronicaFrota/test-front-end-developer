@@ -1,0 +1,13 @@
+<div *ngIf="parlamentarInfo">
+	<h2 class="titulo-grafico">Deputado {{ parlamentarInfo.nome | titlecase }} - {{ parlamentarInfo.siglaPartido }} ({{ parlamentarInfo.siglaUf }})</h2>
+	<h3 class="subtitulo-grafico">Valores Gastos com Fornecedores no Mês de Setembro</h3>
+</div>
+
+<div *ngIf="despesa">
+	<canvas baseChart
+		[data]="doughnutChartData"
+		[labels]="doughnutChartLabels"
+		[chartType]="doughnutChartType"
+		[options]="doughnutChartOptions">
+	</canvas>
+</div>

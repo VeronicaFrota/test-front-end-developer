@@ -1,0 +1,9 @@
+.grafico-information {
+    background: #FFFFFF;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+

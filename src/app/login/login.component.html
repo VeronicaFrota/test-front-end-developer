@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="login-information">
+        <div class="login-item">
+            <img class="logo" src="../../assets/trestto.png">
+        </div>
+
+        <div class="login-item login-form">
+            <form [formGroup]="loginForm">
+                <h3>Acesse sua conta!</h3>
+                <mat-form-field>
+                    <input autocomplete="off" matInput placeholder="Email" formControlName="email">
+                    <mat-hint>Informe seu email</mat-hint>
+                    <mat-error *ngIf="!loginForm.controls.email.valid && loginForm.controls.email.touched">
+                        Por favor, digite um email válido
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input autocomplete="off" type="password" matInput placeholder="Senha" formControlName="senha">
+                    <mat-hint>Informe sua senha</mat-hint>
+                    <mat-error *ngIf="!loginForm.controls.senha.valid && loginForm.controls.senha.touched">
+                        Por favor, digite uma senha válida
+                    </mat-error>
+                </mat-form-field>
+            </form>
+
+            <button mat-stroked-button [routerLink]="['app/dashborad']">Entrar</button>
+            <a [routerLink]="['recupera-senha']">Recuperar Senha</a>
+        </div>
+    </div>
+</div>

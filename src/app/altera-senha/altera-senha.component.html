@@ -1,0 +1,42 @@
+<div class="container">
+	<h1>Altere sua Senha!</h1>
+	<div class="altera-senha-information">
+		<div class="altera-senha-item">
+			<form [formGroup]="alteraSenhaForm">
+				<mat-form-field class="altera-senha-right">
+					<input type="password" matInput placeholder="Senha Antiga" formControlName="senhaAntiga">
+					<mat-hint>Informe sua senha antiga</mat-hint>
+					<mat-error
+						*ngIf="!alteraSenhaForm.controls.senhaAntiga.valid && alteraSenhaForm.controls.senhaAntiga.touched">
+						Por favor, digite uma senha válida
+					</mat-error>
+				</mat-form-field>
+
+				<mat-form-field class="altera-senha-right">
+					<input type="password" matInput placeholder="Nova Senha" formControlName="novaSenha">
+					<mat-hint>Informe sua nova senha</mat-hint>
+					<mat-error
+						*ngIf="!alteraSenhaForm.controls.novaSenha.valid && alteraSenhaForm.controls.novaSenha.touched">
+						Por favor, digite uma senha válida
+					</mat-error>
+				</mat-form-field>
+
+				<mat-form-field>
+					<input type="password" matInput placeholder="Confirmar Nova Senha"
+						formControlName="confirmaNovaSenha">
+					<mat-hint>Confirme sua nova senha</mat-hint>
+					<mat-error
+						*ngIf="!alteraSenhaForm.controls.confirmaNovaSenha.valid && alteraSenhaForm.controls.confirmaNovaSenha.touched">
+						Informe senhas iguais
+					</mat-error>
+				</mat-form-field>
+			</form>
+
+			<div class="button-information">
+				<button mat-stroked-button class="left" [routerLink]="['#']">Cancelar</button>
+				<button mat-stroked-button class="right" [routerLink]="['dashborad']">Salvar</button>
+			</div>
+
+		</div>
+	</div>
+</div>

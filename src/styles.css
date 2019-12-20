@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+
+.container > * {
+    width: 100%; 
+    background: #FFFFFF;
+}
+
+/* Gráficos */
+.subtitulo-grafico, .titulo-grafico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-grafico {
+    margin-top: 77px;
+}
+
+canvas {
+    display: flex !important;
+    width: 530px  !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+::ng-deep .mat-icon {
+    font-size:50px !important;
+}
+
+.mat-sidenav-content {
+    background-color: #FFFFFF;
+}

@@ -1,54 +1,27 @@
-# Front End Developer
+# TestTrestto
 
-> ![Logo Trestto](/.attachments/TR_LOGO_2.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
-Todos os interessados que fizerem Pull Request receberão um feedback da Trestto.<br>
-Essa prova consiste em testar seus conhecimentos em desenvolvimento de aplicações web cross-platform.<br>
+## Development server
 
-## Como participar?
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-> Basta fazer um fork deste repositório e após a finalização realizar um Pull Request com o código do app para ser analisado por nós. :D 
+## Code scaffolding
 
-## Detalhes da prova
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-> A prova consiste em desenvolver um Dashboard de uma aplicação web, utilizando dados da api publica disponibilizada para o Teste.<br>
-> A aplicação deve ser desenvolvida de preferência utilizando algum framework Javascript (**React**, **Angular**, **Vue**, etc). <br>
+## Build
 
-### Funcionalidades
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Na aplicação devem conter as seguintes funcionalidades:
+## Running unit tests
 
-- Interface de cadrastro,login e recuperação de senha.
-- Barra lateral com navegação.
-- Barra superior com navegação.
-- Apresentar dados relavantes sobre despesas dos parlamentares
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Especificações técnicas
+## Running end-to-end tests
 
-As informações do dashboard devem ser preenchidas a partir dos valores vindo de uma **API Externa**. <br>
-Sinta-se a vontade para utilizar qualquer biblioteca de gráficos para fazer a montagem, não iremos avaliar qual biblioteca foi utilizada. <br>
-Para esse desafio escolhemos a api publica **dados abertos** do governo brasileiro:
-https://dadosabertos.camara.leg.br/swagger/api.html
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Further help
 
-### Protótipo da aplicação
-
-Na **Trestto** seguimos as diretrizes do Material Design (https://material.io/design/)<br>
-Mas fique a vontade de utilizar alguma biblioteca de UI sua preferência.<br>
-
-
-### Exemplos de Dashbord
-
-Abaixo vamos apresentar alguns dashbords para inspiração, porem sinta-se totalmente livre para apresentar.
-
-**Exemplo01**
-![Exemplo01.jpg](/.attachments/exemplo1.gif)
-
-**Exemplo02**
-![Exemplo02.jpg](/.attachments/exemplo2.jpg)
-
-## Dúvidas?
-> valerio.cardoso@trestto.com.br <br>
-> http://www.trestto.com.br
-
-### Desde já agradecemos e boa sorte! ;)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

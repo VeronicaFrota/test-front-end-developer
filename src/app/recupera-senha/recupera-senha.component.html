@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="login-information">
+        <div class="login-item">
+            <img class="logo" src="../../assets/trestto.png">
+        </div>
+
+        <div class="login-item login-form">
+            <form [formGroup]="loginForm">
+                <h3>Esqueceu sua senha?</h3>
+                <span>Entre com seu email abaixo que nós enviaremos seu código de verificação.</span>
+                <mat-form-field class="email">
+                    <input matInput placeholder="Email" formControlName="email">
+                    <mat-hint>Informe seu email</mat-hint>
+                    <mat-error *ngIf="!loginForm.controls.email.valid && loginForm.controls.email.touched">
+                        Por favor, digite um email válido
+                    </mat-error>
+                </mat-form-field>
+            </form>
+
+            <button mat-stroked-button [routerLink]="['#']">Recuperar Senha</button>
+            <button mat-stroked-button [routerLink]="['']">Voltar ao Login</button>
+        </div>
+    </div>
+</div>

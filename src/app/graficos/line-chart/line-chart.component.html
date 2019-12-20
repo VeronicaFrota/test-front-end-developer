@@ -1,0 +1,34 @@
+<h2>Depois eu penso em um titulo</h2>
+
+<!-- <div style="display: block">
+	<canvas baseChart 
+		[datasets]="lineChartData"
+		[labels]="lineChartLabels"
+		[chartType]="lineChartType">
+	</canvas>
+</div> -->
+
+
+<!-- <div class="container">
+	<div class="col-sm-4 text-center">
+		<h2 class="text-center">PIE chart using Chartjs and Angular 6</h2>
+		<canvas baseChart
+			[data]="pieChartData"
+			[labels]="pieChartLabels"
+			[chartType]="pieChartType"
+			[options]="pieChartOptions"
+			(chartHover)="chartHovered($event)"
+			(chartClick)="chartClicked($event)">
+		</canvas>
+	</div>
+</div> -->
+
+<div class="grafico-item" *ngIf="despesaGrafico">
+	<canvas baseChart
+			[datasets]="barChartData"
+			[labels]="barChartLabels"
+			[options]="barChartOptions"
+			[legend]="barChartLegend"
+			[chartType]="barChartType">
+	</canvas>
+</div>

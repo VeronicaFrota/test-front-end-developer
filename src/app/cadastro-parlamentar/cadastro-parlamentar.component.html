@@ -1,0 +1,107 @@
+<div class="container">
+	<div class="form-information">
+		<form class="form-field" [formGroup]="cadForm">
+			<h1>Cadastro de Parlamentar</h1>
+			<mat-form-field class="input-form">
+				<input matInput placeholder="* Nome" formControlName="nome">
+				<mat-hint>Informe o nome</mat-hint>
+				<mat-error *ngIf="!cadForm.controls.nome.valid && cadForm.controls.nome.touched">
+					Nome é obrigatório
+				</mat-error>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<input matInput placeholder="* Nome Civil" formControlName="nomeCivil">
+				<mat-hint>Informe o nome civil</mat-hint>
+				<mat-error *ngIf="!cadForm.controls.nomeCivil.valid && cadForm.controls.nomeCivil.touched">
+					Nome Civil é obrigatório
+				</mat-error>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<input matInput placeholder="Email" formControlName="email">
+				<mat-hint>Informe seu email</mat-hint>
+				<mat-error *ngIf="!cadForm.controls.email.valid && cadForm.controls.email.touched">
+					Email é obrigatório
+				</mat-error>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<!-- Forma correta para povoar os campos com os dados que vieram da base dedados
+					<mat-option *ngFor="let s of sexos" [value]="s.value">
+						{{ s.tipo }}
+					</mat-option> 
+				-->
+
+				<!-- Exemplo para visualização de como o campo ficaria no layout -->
+				<select matNativeControl>
+					<option value="">Sexo</option>
+					<option value="feminino">Feminino</option>
+					<option value="masculino">Masculino</option>
+				</select>
+			</mat-form-field>
+
+			<mat-form-field class="input-form data">
+				<input matInput [matDatepicker]="picker" placeholder="Data Nasc.">
+				<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+				<mat-datepicker #picker></mat-datepicker>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<!-- Forma correta para povoar os campos com os dados que vieram da base dedados
+					<mat-option *ngFor="let siglaPartido of siglaPartidos" [value]="siglaPartido.value">
+						{{ siglaPartido.tipo }}
+					</mat-option> 
+				-->
+
+				<!-- Exemplo para visualização de como o campo ficaria no layout -->
+				<select matNativeControl>
+					<option value="">Sigla do Partido</option>
+					<option value="mdb">MDB</option>
+					<option value="ptb">PTB</option>
+					<option value="psdb">PSDB</option>
+					<option value="pv">PV</option>
+				</select>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<!-- Forma correta para povoar os campos com os dados que vieram da base dedados
+					<mat-option *ngFor="let siglaUf of siglaUfs" [value]="siglaUf.value">
+						{{ siglaUf.tipo }}
+					</mat-option> 
+				-->
+
+				<!-- Exemplo para visualização de como o campo ficaria no layout -->
+				<select matNativeControl>
+					<option value="">Sigla UF</option>
+					<option value="sp">SP</option>
+					<option value="pr">PR</option>
+					<option value="sc">SC</option>
+					<option value="rj">RJ</option>
+				</select>
+			</mat-form-field>
+
+			<mat-form-field class="input-form">
+				<!-- Forma correta para povoar os campos com os dados que vieram da base dedados
+					<mat-option *ngFor="let escolaridade of escolaridades" [value]="escolaridade.value">
+						{{ escolaridade.tipo }}
+					</mat-option> 
+				-->
+
+				<!-- Exemplo para visualização de como o campo ficaria no layout -->
+				<select matNativeControl>
+					<option value="">Escolaridade</option>
+					<option value="superiorCompleto">Superior completo</option>
+					<option value="posGraduacao">Pós-graduação</option>
+					<option value="mestrado">Mestrado</option>
+					<option value="doutorado">Doutorado</option>
+					<option value="posDoutorado">Pós-Doutorado</option>
+				</select>
+			</mat-form-field>
+		</form>
+		<div class="button-information">
+			<button mat-stroked-button class="left" [routerLink]="['#']">Cancelar</button>
+			<button mat-stroked-button class="right" [routerLink]="['dashborad']">Salvar</button>
+		</div>
+	</div>
+</div>
